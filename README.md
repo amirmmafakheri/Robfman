@@ -76,4 +76,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Project by [YOUR_NAME]**
+**Project by eMtwo**
