@@ -1,6 +1,6 @@
-# roBFMan
+# robfman
 
-**roBFMan** is a flexible command-line tool for fetching and displaying archived content of specific files or pages (like `robots.txt`, `admin.php`, etc.) from multiple domains via [archive.org](https://archive.org/).
+**robfman** is a flexible command-line tool for fetching and displaying archived content of specific files or pages (like `robots.txt`, `admin.php`, etc.) from multiple domains via [archive.org](https://archive.org/).
 
 ---
 
