@@ -50,6 +50,41 @@ python robfman.py -ft domains.txt -fp paths.txt -d 2 -o output.txt
 | `-d, --delay` | Delay (seconds) between each request (default: 0.5) |
 | `-o, --output` | Output file path |
 
+
+## Running with Docker
+
+You can run roBFMan easily with Docker without installing any dependencies on your system.
+
+### 1. Build the Docker image
+
+```bash
+docker build -t robfman .
+```
+
+### 2. Run with Docker
+
+#### Show help
+
+```bash
+docker run --rm robfman
+```
+
+#### Run for a single domain and path
+
+```bash
+docker run --rm robfman -t example.com -p robots.txt
+```
+
+#### Run with domains and paths from files, and save output
+
+Make sure you have your `domains.txt` and `paths.txt` files in your project folder.
+Mount your current directory so Docker can access input/output files:
+
+```bash
+docker run --rm -v $PWD:/app robfman -ft domains.txt -fp paths.txt -d 2 -o output.txt
+```
+
+- `-v $PWD:/app` mounts your current directory into the container, so the container can read/write the files.
 ---
 
 ## Example `domains.txt`
